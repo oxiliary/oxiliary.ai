@@ -1,113 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
-	<title>oxiliary.ai</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="siriwave.umd.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            font-weight: 100;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        #container,
+        #container-9 {
+            width: 600px;
+            height: 300px;
+            background-size: cover;
+            margin: 20px;
+            margin: 0 auto;
+            border: 1px dashed rgba(255, 255, 255, 0.4);
+        }
+
+        footer {
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
 </head>
 
-<body class="is-preload">
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<span class="symbol"><img src="images/logo.png" alt="" /></span><span
-						class="title">oxiliary.ai [UNDER CONSTRUCTION]</span>
-				</a>
-
-				<!-- Nav -->
-				<nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</header>
-
-		<!-- Menu -->
-		<nav id="menu">
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="generic.html">Ipsum veroeros</a></li>
-				<li><a href="generic.html">Tempus etiam</a></li>
-				<li><a href="generic.html">Consequat dolor</a></li>
-				<li><a href="elements.html">Elements</a></li>
-			</ul>
-		</nav>
-
-		<!-- Main -->
-		<div id="main">
-			<div class="inner">
-				<header>
-					<center>
-						<h5>An intelligence platform specializing in music information retrieval, machine learning, and
-							artist promotion.</h5>
-					</center>
-				</header>
-				<section class="tiles">
-					<article class="style1">
-						<span class="image">
-							<img src="images/pic01.jpg" alt="" />
-						</span>
-						<a href="coming.html">
-							<h2>shredder</h2>
-							<div class="content">
-								<p>A lightweight LSTM-Autoencoder source separation library.</p>
-							</div>
-						</a>
-					</article>
-					<article class="style2">
-						<span class="image">
-							<img src="images/pic02.jpg" alt="" />
-						</span>
-						<a href="coming.html">
-							<h2>aful</h2>
-							<div class="content">
-								<p>Audio feature understanding and learning framework.</p>
-							</div>
-						</a>
-					</article>
-					<article class="style3">
-						<span class="image">
-							<img src="images/pic03.jpg" alt="" />
-						</span>
-						<a href="coming.html">
-							<h2>oxygen</h2>
-							<div class="content">
-								<p>Automated music sourcing, visualizing and promoting service.</p>
-							</div>
-						</a>
-				</section>
-				<br>
-				<center>
-					<h5>oxygen videos</h5>
-				</center>
-				<section class="tiles">
-
-				</section>
-			</div>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+<body>
+    <p style="font-family: 'Barlow'">
+        oxiliary.ai coming soon...
+    </p>
+    <div id="siri-container"></div>
 </body>
+
+<script>
+    var siriWave = new SiriWave({
+        container: document.getElementById("siri-container"),
+        width: 640,
+        height: 200,
+        speed: 0.025,
+        autostart: true
+    });
+</script>
 
 </html>
