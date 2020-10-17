@@ -2,7 +2,10 @@
 <html>
 
 <head>
+    <title>oxiliary.ai</title>
     <script src="siriwave.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.js"></script>
+    <script src="audio.handler.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
     <style>
         body {
@@ -16,32 +19,18 @@
         }
 
         a {
-            color: #fff;
-        }
-
-        #container,
-        #container-9 {
-            width: 600px;
-            height: 300px;
-            background-size: cover;
-            margin: 20px;
-            margin: 0 auto;
-            border: 1px dashed rgba(255, 255, 255, 0.4);
-        }
-
-        footer {
-            padding-top: 20px;
-            margin-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.4);
+            color: inherit;
         }
     </style>
 </head>
 
 <body>
     <p style="font-family: 'Barlow'">
-        oxiliary.ai coming soon...
+        coming soon...
     </p>
     <div id="siri-container"></div>
+    <p style="font-family: 'Barlow';"><a style="text-decoration: none;" href="https://github.com/oxiliary">github</a>
+    </p>
 </body>
 
 <script>
@@ -50,6 +39,7 @@
         width: 640,
         height: 200,
         speed: 0.025,
+        frequency: Math.floor(Math.random() * 10) + 4,
         autostart: true
     });
 </script>
