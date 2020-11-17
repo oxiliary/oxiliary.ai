@@ -1,2 +1,2 @@
 # oxiliary.ai
-:newspaper: oxiliary's front-facing website.
+think WolframAlpha but for music
