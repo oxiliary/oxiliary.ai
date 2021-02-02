@@ -3,7 +3,7 @@ let bufferLength = null
 let dataArray = null
 
 var sound = new Howl({
-    src: ['oxiliary.mp3'],
+    src: ['assets/oxiliary.mp3'],
     volume: 0.09,
 });
 
